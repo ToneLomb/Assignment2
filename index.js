@@ -17,8 +17,6 @@ app.get('/', (req, res) => {
 app.get('/food/:id', (req,res) => {
   alert("You chosed food " + req.params.id)
   res.json(food[parseInt(req.params.id) - 1])
-  
-  
 })
 
 app.listen(port, () => {
